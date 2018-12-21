@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class Counter extends React.Component {
   constructor(props) {
@@ -17,25 +17,25 @@ class Counter extends React.Component {
   };
 
   updateCounter(count) {
-    let polarity = '';
+    let polarity = "";
     if (count >= 0) {
-      polarity = 'positive';
+      polarity = "positive";
     }
     if (count <= 0) {
-      polarity = 'negative';
+      polarity = "negative";
     }
     this.setState({ count, polarity });
   }
 
   render() {
-    let classes = ['count', this.state.polarity];
+    let classes = ["count", this.state.polarity];
     return (
       <section className="counter">
-        <a href="#" className="down clicker" onClick={this.handleDown}>
+        <a href="#" className="down-clicker" onClick={this.handleDown}>
           -
         </a>
-        <span className={classes.join(' ')}>{this.state.count}</span>
-        <a href="#" className="up clicker" onClick={this.handleUp}>
+        <span className={classes.join(" ")}>{this.state.count}</span>
+        <a href="#" className="up-clicker" onClick={this.handleUp}>
           +
         </a>
       </section>
