@@ -21,4 +21,10 @@ describe("<Counter />", () => {
     button.simulate("click");
     expect(app.state("polarity")).toBe("positive");
   });
+
+  it('renders right', () => {
+    const tree = renderer.create(<Counter />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  
 });
