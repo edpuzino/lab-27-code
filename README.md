@@ -10,19 +10,9 @@
 ### Links and Resources
 * [repo](https://github.com/edpuzino/lab-27-code)
 * [travis](https://travis-ci.com/edpuzino/lab-27)
-* [AWS](http://xyz.com)
+* [AWS](http://counter-demo.s3-website-us-west-2.amazonaws.com/)
+* [AWS-2](https://counterstack-counterdemofromgithub-vpf58hbd4jyy.s3.us-east-2.amazonaws.com/index.html)
 * [front-end](https://codesandbox.io/s/7jzk33okrq)
-
-### Modules
-#### `modulename.js`
-##### Exported Values and Methods
-
-###### `foo(thing) -> string`
-Usage Notes or examples
-
-###### `bar(array) -> array`
-
-Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
@@ -37,9 +27,7 @@ Usage Notes or examples
   * Returns a JSON object with xyz in it.
 
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* `npm run test`
 
 #### UML
 ![](./assets/lab_27.jpg)
